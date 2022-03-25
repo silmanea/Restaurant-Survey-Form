@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Survey Form</title>
+    <header>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+        </style>
+        <h1 id="title">Restaurant Survey Form</h1>
+      </header>
+</head>
+<body>
+    
+        <p id="description">Add details below to complete this survey</p>
+        <form id="survey-form">
+          <div class="input-headings">
+            <label for="name" id="name-label">Name*</label>
+            <input id="name" type="text" name="name" placeholder="John Doe" class="form-inputs" required> </input>
+            <br>
+            <label for="email" id="email-label">Email*</label>
+            <input id="email" type="email" name="email" placeholder="johndoe@gmail.com" class="form-inputs" required> </input>
+            <br>
+            <label for="number" id="number-label">Age*</label>
+            <input id="number" type="number" name="number" placeholder="21" min="18" max="99" class="form-inputs" required> </input>
+            <br>
+            <br>
+            <label for="dropdown">From a scale of 1 to 10 how was your experience with us?</label>
+            <select id="dropdown" class="form-inputs">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+              <option value="seven">7</option>
+              <option value="eight">8</option>
+              <option value="nine">9</option>
+              <option value="ten">10</option>
+            </select>
+            <br>
+            <br>
+            <label for="radio-list">How likely are you to recommend us to a friend?</label>
+            <br>
+            <input id="radio-list" type="radio" id="very-likely" name="recommend" value="very-likely">
+            <label for="radio-list">Very likely</label>
+            <br>
+            <input id="radio-list" type="radio" id="not-so-much" name="recommend" value="not-so-much">
+            <label for="radio-list">Not so much</label>
+            <br>
+            <input id="radio-list" type="radio" id="not-at-all" name="recommend" value="not-at-all">
+            <label for="radio-list">Not at all</label>
+            <br>
+            <br>
+            <label for="improve">What would you like us to improve? (Check all that apply)</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="improve" value="the-menu">
+            <label for="checkbox">The Menu</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="improve" value="the-service">
+            <label for="checkbox">The Service</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="improve" value="the-decor">
+            <label for="checkbox">The Decor</label>
+            <br>
+            <br>
+            <label id="label-textarea">Additional comments:</label>
+            <br>
+            <textarea id="textarea" name="comments" rows="3" cols="50" class="comment-inputs"> </textarea>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Submit Form" class="submit-button">
+          </div>
+        </form>
+</body>
+</html>
